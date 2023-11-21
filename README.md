@@ -9,7 +9,7 @@ __What's this?__
 This repository is created to give people the ability to make forces for Legions Imperialis in Battlescribe. It's a GitHub repository of datafiles. 
 
 Data Url:
-https://github.com/th3proj3ct/wh40k-apocalypse-10e/releases/download/Release/index.bsi
+https://github.com/th3proj3ct/LegionsImperialis/releases/download/Release/index.bsi
 
 On PC you go Manage Data (three rectangles) -> Import Data -> Import Data from URL -> use our data URL.
 
