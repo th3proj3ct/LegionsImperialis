@@ -1,0 +1,2085 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="f55f-904b-358d-63ee" name="Legiones Astartes" revision="1" battleScribeVersion="2.03" authorName="Th3Proj3ct" authorUrl="https://github.com/th3proj3ct/LegionsImperialis/" library="false" gameSystemId="f02f-b67d-2b22-bc98" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <forceEntries>
+    <forceEntry id="a6ce-1021-3661-4994" name="Legion Demi-Company" hidden="false">
+      <categoryLinks>
+        <categoryLink id="8083-afb7-5143-b368" name="HQ" hidden="false" targetId="a4ea-0cfb-537b-ca12" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2899-7b61-6a86-1e44" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6db6-24f9-a798-05fe" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b7e7-731f-6aff-6094" name="Core" hidden="false" targetId="7370-2f29-7f62-e413" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fc5-3d2f-7729-c872" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ef7-0d4d-bcc6-967c" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b659-be40-66e3-92ad" name="Support" hidden="false" targetId="ee0b-e2bd-604f-e194" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eda5-5723-09b1-23b5" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b46c-edc4-24b1-c848" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="fb94-778c-2fc3-f03e" name="Bastion" hidden="false" targetId="ab6a-6694-93ab-32ac" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c9d-ca74-c0dc-0c1a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="07f9-2a30-a7aa-6fe8" name="Vanguard" hidden="false" targetId="505e-8834-bcf2-e96d" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78ff-4361-2236-c605" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f3a6-75dc-1b05-a07c" name="Artillery" hidden="false" targetId="a71c-c45e-8aeb-c1e7" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19ab-79ac-1b51-d7c1" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="590c-5743-bc57-f43c" name="Battle Tank" hidden="false" targetId="c637-f33f-4b30-3869" primary="false">
+          <modifiers>
+            <modifier type="set" field="9058-1402-b64b-c18e" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fed-47bc-8b39-4c04" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9058-1402-b64b-c18e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="b547-7768-93ad-46f7" name="Heavy Armour" hidden="false" targetId="3fed-47bc-8b39-4c04" primary="false">
+          <modifiers>
+            <modifier type="set" field="52cf-ad30-c1ce-e402" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c637-f33f-4b30-3869" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52cf-ad30-c1ce-e402" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ec84-eb22-7c5d-ebcf" name="Air Support" hidden="false" targetId="5138-91f9-9899-9102" primary="false">
+          <modifiers>
+            <modifier type="set" field="28fe-7170-8753-4065" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="cbf0-9ac8-268c-bddf" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28fe-7170-8753-4065" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="1337-678a-017e-9a76" name="Transport" hidden="false" targetId="d562-1a2c-6494-3520" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7eee-1052-d7de-1552" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4d03-4d4f-9fde-828c" name="Light Armour" hidden="false" targetId="cbf0-9ac8-268c-bddf" primary="false">
+          <modifiers>
+            <modifier type="set" field="cdf7-436c-49a4-f97d" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5138-91f9-9899-9102" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdf7-436c-49a4-f97d" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="214d-6b2f-35ad-1445" name="Legion Garrison Force" hidden="false">
+      <categoryLinks>
+        <categoryLink id="33ea-4c21-965f-a2f0" name="Core" hidden="false" targetId="7370-2f29-7f62-e413" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcce-5e21-911a-1da9" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba09-f536-8746-5d0e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="76a5-03e4-208e-b3f1" name="HQ" hidden="false" targetId="a4ea-0cfb-537b-ca12" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6106-d703-c0e2-4c23" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6b8-8b01-c061-00e9" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="c272-d777-0e3f-0173" name="Support" hidden="false" targetId="ee0b-e2bd-604f-e194" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a75-4981-830d-7450" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb34-2138-8028-8eee" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4c2f-a9c9-1a5b-09a3" name="Bastion" hidden="false" targetId="ab6a-6694-93ab-32ac" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e13-1799-d27a-3e09" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40a6-2b7d-3900-4ac9" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a058-1f39-0eb1-495d" name="Vanguard" hidden="false" targetId="505e-8834-bcf2-e96d" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="358e-ac48-dda2-788d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8e11-6d73-5040-7d15" name="Artillery" hidden="false" targetId="a71c-c45e-8aeb-c1e7" primary="false">
+          <modifiers>
+            <modifier type="set" field="fb10-eae7-f94c-c9e0" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fed-47bc-8b39-4c04" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb10-eae7-f94c-c9e0" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d687-7300-e45c-6e42" name="Battle Tank" hidden="false" targetId="c637-f33f-4b30-3869" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e997-7cea-4cb2-0349" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ace6-e06b-bc40-0da5" name="Heavy Armour" hidden="false" targetId="3fed-47bc-8b39-4c04" primary="false">
+          <modifiers>
+            <modifier type="set" field="c477-3df7-a8df-c007" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="a71c-c45e-8aeb-c1e7" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c477-3df7-a8df-c007" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="cc30-b538-4e1d-b682" name="Air Support" hidden="false" targetId="5138-91f9-9899-9102" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d129-9583-f928-a6bb" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="68eb-44ec-8e31-7e85" name="Transport" hidden="false" targetId="d562-1a2c-6494-3520" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a38-ce56-9d7b-6bb2" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="be3c-9f43-9ec6-77e3" name="Light Armour" hidden="false" targetId="cbf0-9ac8-268c-bddf" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c1f-2144-a560-f319" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+  </forceEntries>
+  <selectionEntries>
+    <selectionEntry id="36e5-c063-d453-df01" name="Legion Command" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7ba7-9e5a-2c4b-618f" name="Legion Command" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+            <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+4</characteristic>
+            <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">2+</characteristic>
+            <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+            <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">1</characteristic>
+            <characteristic name="Size" typeId="2321-029e-4f6e-e95b">1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="838e-a276-3e51-ef12" name="Invulnerable Save (X)" hidden="false" targetId="a004-e385-1d47-6fe2" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="ca98-be7b-fba3-9332" name="Medicae" hidden="false" targetId="8193-d487-5afe-673a" type="profile"/>
+        <infoLink id="7731-f266-3aa0-315f" name="Commander" hidden="false" targetId="1723-cc01-7119-88a9" type="profile"/>
+        <infoLink id="cb32-afa0-c65a-7820" name="Master Tactician" hidden="false" targetId="db4d-02b6-77f1-c0f3" type="profile"/>
+        <infoLink id="f2d4-c712-b3cf-39b7" name="Commander" hidden="false" targetId="c7a3-f2c0-c92b-cfb0" type="rule"/>
+        <infoLink id="fa1b-5b90-a9c3-f884" name="Inspire (X)" hidden="false" targetId="aea6-e08d-9135-c0f1" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Inspire (8&quot;)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="50d4-fdf1-2e0a-9634" name="New CategoryLink" hidden="false" targetId="a4ea-0cfb-537b-ca12" primary="true"/>
+      </categoryLinks>
+      <entryLinks>
+        <entryLink id="58b0-7177-a952-dc8f" name="Legion combi-bolters" hidden="false" collective="false" import="true" targetId="5fdc-ea48-b61f-c0e7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="217b-c943-a92b-a874" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d259-f017-1c93-1e12" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="25.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8507-00cc-f984-49bf" name="Legion Xiphon Interceptor Squadron" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a70d-e1dd-e75d-28d8" name="Xiphon Interceptor" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">30&quot;</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">3+</characteristic>
+            <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+0</characteristic>
+            <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">-</characteristic>
+            <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+            <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">2</characteristic>
+            <characteristic name="Size" typeId="2321-029e-4f6e-e95b">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="9ac5-f926-549d-78a8" name="Xiphon Lascannon Array" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">22&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Accurate, Anti-tank, Skyfire</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="f869-8d90-7914-4582" name="Xiphon Rotary Missile Launcher" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">24&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Skyfire, Tracking</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="de23-9382-2684-ef58" name="Jink (X)" hidden="false" targetId="e034-e5dd-6485-2fa7" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Jink (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="9a08-662e-f1bd-08d3" name="Flyer" hidden="false" targetId="0eb1-b57a-6c38-9f93" type="profile"/>
+        <infoLink id="dfff-8517-b1cd-59a4" name="Interceptor" hidden="false" targetId="e8d6-5465-2c03-2e1a" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0dc4-06dd-1fad-d859" name="New CategoryLink" hidden="false" targetId="5138-91f9-9899-9102" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6e76-05d9-786c-bf86" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56db-3df6-5dc8-744e" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="957a-dfba-5182-1cf5" name="Increase Detachment by 1" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="85.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cef5-c3d0-7d9c-5a50" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="160.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c909-5b5e-0c86-64bf" name="Increase Detachment by 3" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="215.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="95.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6df0-11fb-4b53-a93c" name="Legion Sicaran Squadron" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7f4d-db41-db4a-b676" name="Legion Sicaran" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">10&quot;</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">3+</characteristic>
+            <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+2</characteristic>
+            <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">3+</characteristic>
+            <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+            <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">2</characteristic>
+            <characteristic name="Size" typeId="2321-029e-4f6e-e95b">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a82a-3e45-0b5c-19ba" name="Hull Mounted Heavy Bolter" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Light, Point Defence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="c1a3-d4de-e9b0-f471" name="New CategoryLink" hidden="false" targetId="c637-f33f-4b30-3869" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3f38-2609-083d-6894" name="Upgrades (Max 6)" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="c041-a67c-d12e-ed95" name="Increase Detachment by 1" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="40.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="fb1c-208a-3e14-4785" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="70.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8f33-35bd-42b3-6029" name="Increase Detachment by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="140.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6189-b5b0-f77b-8113" name="Turret Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="955d-b4d1-73e3-0538">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e52a-fc38-5d4f-642a" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="955d-b4d1-73e3-0538" name="Twin-linked accelerator autocannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="125a-6d36-f3c7-34fa" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="2a2f-6f6b-3147-06ec" name="Twin-linked accelerator autocannon" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">16&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">3</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Tracking</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3db0-e6f4-cf6b-ef98" name="Omega plasma array" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e68-f436-0ecf-0634" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="b6b6-d5b9-3f49-b527" name="Omega plasma array" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-2</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Accurate</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="096f-9251-bfd1-2d1b" name="Sponson Weapons" hidden="false" collective="false" import="true" targetId="499a-42a2-6d5b-46e4" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="105.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ff29-8e9a-02fa-d307" name="Legion Kratos Squadron" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="9c5d-5dec-3a57-c3ba" name="Legion Kratos" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">8&quot;</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">2+</characteristic>
+            <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+3</characteristic>
+            <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">3+</characteristic>
+            <characteristic name="W" typeId="5fb2-b6ab-559a-924c">2</characteristic>
+            <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">2</characteristic>
+            <characteristic name="Size" typeId="2321-029e-4f6e-e95b">2</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="736d-5fe5-abc6-f75e" name="Co-axial autocannon" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">16&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Co-axial, Light AT</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="5a03-bf0f-5823-6363" name="New CategoryLink" hidden="false" targetId="3fed-47bc-8b39-4c04" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d4d3-3f04-7d34-295c" name="Upgrades (Max 6)" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="c382-f90e-4df2-2c0b" name="Increase Detachment by 1" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="60.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b320-6712-3f0b-97cf" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="110.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f4d3-6389-f83a-18e9" name="Increase Detachment by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="200.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f6af-210c-6c30-789a" name="Sponson Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="a9c6-df76-08f0-e924">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24c7-e1dd-543c-0f0f" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="5182-baf2-371d-e306" name="Sponson Mounted Heavy Bolters" hidden="false" collective="false" import="true" targetId="7846-5396-bca2-91ae" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af2b-e1d4-1f5f-7897" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a9c6-df76-08f0-e924" name="Sponson Mounted Lascannon" hidden="false" collective="false" import="true" targetId="e2a4-e864-6650-0018" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b43f-1058-4a46-df31" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e5d6-c97d-7653-1a75" name="Hull Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="b962-b4df-6d02-9b8b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f036-70f2-c028-5d61" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c8f5-f366-6612-8c15" name="2 Hull Mounted Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ca5-5f08-27d0-c556" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6991-d19a-189e-75bf" name="Hull Mounted Heavy Bolter" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b962-b4df-6d02-9b8b" name="2 Kratos Lascannons" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5e5-f588-b57a-022a" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4455-c626-4f37-60e2" name="Kratos Lascannon" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">22&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Accurate, Arc (Front), Anti-Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="93fc-23cb-09fa-291b" name="2 Kratos Autocannons" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8f0-8193-438e-afd2" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="4e0f-4da5-81c5-02da" name="Kratos Autocannon" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">16&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Accurate, Arc (Front), Light AT</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1249-26de-1bec-f174" name="Turret Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="1052-7197-bcc5-3737">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8382-1cb0-e27b-3f1a" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1c52-33fe-d95c-575a" name="Melta Blastgun" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43ff-244d-f6a3-a1a6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="60e3-169a-dbdb-ab33" name="Melta Blastgun" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-4</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Anti-Tank, Armourbane, Bunker Buster</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1052-7197-bcc5-3737" name="Kratos Battlecannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec3b-661b-436b-63c8" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5bc4-934c-554a-bccc" name="Kratos Battlecannon (AP)" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">10&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-4</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Anti-Tank, Armourbane</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="48a6-b6ea-c8c5-3b4e" name="Kratos Battlecannon (HE)" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">20&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="150.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7394-6537-7188-bbee" name="Legion Tactical Detachment" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4e28-263d-6620-1b19" name="Tactical Legionaries" hidden="false" targetId="4b78-6241-6dcf-ab8f" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="947d-0eea-4838-0b96" name="New CategoryLink" hidden="false" targetId="7370-2f29-7f62-e413" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c0ec-507a-adba-0603" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d257-5b6e-8e94-c858" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c3fd-e595-c37d-df36" name="Tactical Legionaries" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="12.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="322f-b440-4f8f-9eb7" name="Plasma Tactical Support" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="046a-9d69-9c08-202c" name="Plasma guns" hidden="false" collective="false" import="true" targetId="683c-9c9d-35d0-68ca" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a12-7576-0236-bf5a" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42c1-1cee-308a-8c5b" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="71bb-8155-37a2-260f" name="Missile Launcher Heavy Support" hidden="false" collective="false" import="true" type="upgrade">
+              <entryLinks>
+                <entryLink id="9ea8-9c6d-8843-9236" name="Missile Launchers" hidden="false" collective="false" import="true" targetId="5144-1767-614e-c077" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9297-943c-a023-9077" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11b8-203b-0708-163a" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2479-f14c-599d-0571" name="Legion Terminators" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="0c8b-cc67-85c0-a477" name="Legion Terminators" hidden="false" targetId="ab42-d877-a779-138e" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="2321-029e-4f6e-e95b" value="2"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="a288-7d33-ee49-fe32" name="Bulky" hidden="false" targetId="3ef4-0e46-0f2e-5f22" type="profile"/>
+                <infoLink id="6d28-66e4-d624-20ac" name="Deep Strike" hidden="false" targetId="7551-aff1-0a16-cf63" type="profile"/>
+                <infoLink id="980c-954b-14a2-2c3a" name="Implacable" hidden="false" targetId="4abe-e1b2-61ee-a5cc" type="profile"/>
+                <infoLink id="850a-f274-4cd5-49fc" name="Invulnerable Save (X)" hidden="false" targetId="a004-e385-1d47-6fe2" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="c419-adf8-fbe7-63b2" name="Steadfast" hidden="false" targetId="f16e-791e-e711-a748" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="b014-fece-8940-e6d0" name="Legion combi-bolters" hidden="false" collective="false" import="true" targetId="5fdc-ea48-b61f-c0e7" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3d9-63dc-839a-d8e4" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ee1-70df-7736-d8e7" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="41ff-a278-7311-abaf" name="Assault Marines" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="5b6b-561c-5257-375a" name="Assault Marines" hidden="false" targetId="d3a3-0b88-905a-4aa3" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="2321-029e-4f6e-e95b" value="2"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="3ec5-5b04-97a4-da7e" name="Independent" hidden="false" targetId="a821-03ff-df4b-347b" type="profile"/>
+                <infoLink id="7cba-dd49-6a25-445f" name="Jump Packs" hidden="false" targetId="4fa2-9318-e8a1-c53c" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="af57-2b7c-7db2-39ae" name="Legion bolt pistols" hidden="false" collective="false" import="true" targetId="e4c1-8e38-b6a6-50e6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4aa5-ae89-19b9-36be" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc23-7854-f22a-fb0c" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="12.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d659-6431-8dce-aba5" name="Legion bolters" hidden="false" collective="false" import="true" targetId="966b-25b7-112f-6d25" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03a5-7cf2-562d-d1de" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e81f-9c3b-b84d-0e0a" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="439a-f4ec-0915-01f6" name="Legion Plasma Gun Detachment" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bfef-56f7-9603-6e50" name="Tactical Legionaries" hidden="false" targetId="4b78-6241-6dcf-ab8f" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Support Legionaries"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="2c9f-a2e1-3a9b-4dba" name="New CategoryLink" hidden="false" targetId="ee0b-e2bd-604f-e194" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2c2e-e646-04ca-1ec8" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="206d-ccce-fe17-8b85" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="45a3-8499-84f1-bc77" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="03fe-0f2c-1aac-a3d9" name="Increase Detachment by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="30.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="850d-a242-3b9f-8f42" name="Plasma guns" hidden="false" collective="false" import="true" targetId="683c-9c9d-35d0-68ca" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cf1-e642-7d83-d2bf" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a8d4-2844-0351-1da8" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="35.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ebe5-ed21-cb4d-ce24" name="Legion Missile Launcher Detachment" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1cf6-7931-b419-3654" name="Tactical Legionaries" hidden="false" targetId="4b78-6241-6dcf-ab8f" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Support Legionaries"/>
+            <modifier type="set" field="9c67-6b2a-c85e-8624" value="+1"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d5b7-d3aa-0ef2-e8e5" name="New CategoryLink" hidden="false" targetId="ee0b-e2bd-604f-e194" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3eef-3f64-25ce-abc0" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08f3-fb1d-f9cb-77ea" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e499-a1cd-aab2-6183" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8052-5699-3024-07b4" name="Increase Detachment by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="30.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="be6b-e404-667a-3348" name="Missile Launchers" hidden="false" collective="false" import="true" targetId="5144-1767-614e-c077" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1244-4e63-f75b-b9c6" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e4b-5200-e2ff-4b67" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4a6e-fe6b-edf3-9a28" name="Legion Assault Detachment" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8749-77a3-4b34-eed1" name="Assault Marines" hidden="false" targetId="d3a3-0b88-905a-4aa3" type="profile"/>
+        <infoLink id="3988-46a5-bf67-4896" name="Jump Packs" hidden="false" targetId="4fa2-9318-e8a1-c53c" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="569d-bd0b-50f1-de6c" name="New CategoryLink" hidden="false" targetId="ee0b-e2bd-604f-e194" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="91a2-952d-c6f8-03b3" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ef5-0469-b2ee-8222" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fd3d-456a-98d5-f831" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="12.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a188-c684-4ae6-42fd" name="Increase Detachment by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="24.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="87a4-4091-2623-fecf" name="Legion bolt pistols" hidden="false" collective="false" import="true" targetId="e4c1-8e38-b6a6-50e6" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34bd-e29f-4949-b99c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5b9-9a2e-9cc0-9c3e" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="30.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9a84-cd86-7894-8c5d" name="Legion Terminator Detachment" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="647f-6708-d57f-74d3" name="Legion Terminators" hidden="false" targetId="ab42-d877-a779-138e" type="profile"/>
+        <infoLink id="c4d1-53ba-1dec-bb0d" name="Deep Strike" hidden="false" targetId="7551-aff1-0a16-cf63" type="profile"/>
+        <infoLink id="8e53-2acd-8ba6-290a" name="Bulky" hidden="false" targetId="3ef4-0e46-0f2e-5f22" type="profile"/>
+        <infoLink id="5687-d3c9-01b0-b3b5" name="Implacable" hidden="false" targetId="4abe-e1b2-61ee-a5cc" type="profile"/>
+        <infoLink id="4b3c-f92a-3bd3-d705" name="Invulnerable Save (X)" hidden="false" targetId="a004-e385-1d47-6fe2" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="3165-8597-bf2d-3896" name="Steadfast" hidden="false" targetId="f16e-791e-e711-a748" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="97a0-2868-5be6-a48d" name="New CategoryLink" hidden="false" targetId="ee0b-e2bd-604f-e194" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6369-2855-09b2-a88f" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43e9-862b-05e0-2015" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2e6c-64ae-7a6f-c6d8" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cea9-a474-e08a-5c0b" name="Increase Detachment by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="30.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e14d-4029-3ac3-9901" name="Legion combi-bolters" hidden="false" collective="false" import="true" targetId="5fdc-ea48-b61f-c0e7" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26c5-62c0-5297-2e59" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bff-99ab-2780-465f" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c49d-5133-e94c-44f0" name="Legion Dreadnought Detachment" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="a878-2fba-918f-d0a5" name="Contemptor Dreadnought" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+            <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+5</characteristic>
+            <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">3+</characteristic>
+            <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+            <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">1</characteristic>
+            <characteristic name="Size" typeId="2321-029e-4f6e-e95b">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a8a1-218a-1a1f-3bf7" name="In-built twin-linked bolter" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Accurate, Light, Point Defence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="d5b1-1ba4-fe4f-3ddc" name="Invulnerable Save (X)" hidden="false" targetId="a004-e385-1d47-6fe2" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="334a-ebd6-62a8-8ed9" name="Armoured" hidden="false" targetId="b400-2039-aebd-9775" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0d27-08d0-4473-8b84" name="New CategoryLink" hidden="false" targetId="ee0b-e2bd-604f-e194" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="dc30-efd3-a258-04d8" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c1f-b76c-cfdb-087f" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e558-8921-8b0a-d441" name="2 Contemptors" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e93b-6367-f7de-3b9c" name="2 Leviathans" hidden="false" collective="false" import="true" type="upgrade">
+              <infoLinks>
+                <infoLink id="d464-b68e-145e-e523" name="Twin-linked Volkite Caliver" hidden="false" targetId="ddd3-6a79-5c0b-39db" type="profile"/>
+                <infoLink id="1c73-96b3-77b2-feea" name="Leviathan Siege Claw" hidden="false" targetId="56a0-0f73-b48f-5c40" type="profile"/>
+                <infoLink id="1028-3733-6198-9665" name="Leviathan Dreadnought" hidden="false" targetId="6623-7d41-982b-8cc1" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="2321-029e-4f6e-e95b" value="2"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="cc3d-0d7a-2982-7059" name="Invulnerable Save (X)" hidden="false" targetId="a004-e385-1d47-6fe2" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="name" value="Invulnerable Save (6+)"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="3e03-24fd-84cb-f1c4" name="Ranged Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="fdc6-179f-c749-9893">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="483e-7368-2c5a-4537" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="fdc6-179f-c749-9893" name="Leviathan Storm Cannon" hidden="false" collective="false" import="true" targetId="de63-60fe-89f3-cb13" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ec5-7822-22af-d4a3" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="02cc-ed85-faf5-ff2d" name="Cyclonic Melta Lance" hidden="false" collective="false" import="true" targetId="ac1c-9b4a-3e58-4809" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fff-51ee-b430-14ee" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="35.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="bde5-e6dd-510c-6c2b" name="Ranged Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="350a-c801-d28b-dfdd">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85a2-dfbb-5b9c-bd8a" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="350a-c801-d28b-dfdd" name="Twin-linked Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34e0-16a4-c7b8-3832" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3253-a032-bef6-026e" name="Twin-linked Lascannon" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">22&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Accurate, Anti-Tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="95db-f440-3c0e-3a50" name="Kheres Assault Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c31a-3747-d757-fe50" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8824-52d4-fea9-12e6" name="Kheres Assault Cannon" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">10&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Light AT, Rapid Fire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="70.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f1f9-97ef-529d-3d36" name="Leviathan Siege Dreadnought Detachment" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5c05-73c3-2fc9-98db" name="Leviathan Dreadnought" hidden="false" targetId="6623-7d41-982b-8cc1" type="profile"/>
+        <infoLink id="3a69-3d6b-80f1-6cc4" name="Twin-linked Volkite Caliver" hidden="false" targetId="ddd3-6a79-5c0b-39db" type="profile"/>
+        <infoLink id="5caa-de9a-c43f-37b3" name="Leviathan Siege Claw" hidden="false" targetId="56a0-0f73-b48f-5c40" type="profile"/>
+        <infoLink id="5d09-1eff-71bc-b19e" name="Armoured" hidden="false" targetId="b400-2039-aebd-9775" type="profile"/>
+        <infoLink id="834f-65a0-4b24-a8b3" name="Invulnerable Save (X)" hidden="false" targetId="a004-e385-1d47-6fe2" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (5+)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b254-33a4-9594-131f" name="New CategoryLink" hidden="false" targetId="ee0b-e2bd-604f-e194" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="01d5-c4d8-5bf1-4df7" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="343a-1dee-dc7e-f42c" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="fe7c-57d2-b02d-e080" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="714a-04b7-97ff-51ef" name="Increase Detachment by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="70.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="1856-69ac-3ede-4740" name="Ranged Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="68f8-bca6-e235-2838">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f0d-686a-6d65-9d08" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="68f8-bca6-e235-2838" name="Leviathan Storm Cannon" hidden="false" collective="false" import="true" targetId="de63-60fe-89f3-cb13" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="442d-6c14-56b1-462d" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7d24-cd81-4158-2d4e" name="Cyclonic Melta Lance" hidden="false" collective="false" import="true" targetId="ac1c-9b4a-3e58-4809" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3031-932e-421a-e7ac" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="75.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="96b5-0271-b92f-d545" name="Legion Rapier Battery Detachment" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ddca-101b-4d00-fa56" name="Legion Rapier" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">4&quot;</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+            <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+1</characteristic>
+            <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">3+</characteristic>
+            <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+            <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">1</characteristic>
+            <characteristic name="Size" typeId="2321-029e-4f6e-e95b">2</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="7d6f-894d-2221-0fe6" name="Bulky" hidden="false" targetId="3ef4-0e46-0f2e-5f22" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="f164-265a-2c0e-84a6" name="New CategoryLink" hidden="false" targetId="ab6a-6694-93ab-32ac" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="4ad3-5828-d15b-054f" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a775-419c-392d-15fb" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="67cd-730a-be6f-3c29" name="Increase Detachment by 6" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="90.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="41eb-88ee-05a5-77db" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="30.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dca5-7410-dbbe-f374" name="Increase Detachment by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="60.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="903b-85fb-6cbc-964e" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68e0-bf03-9d4e-93cd" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="132c-fff9-065c-bf23" name="Laser Destroyer Array" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b2a-1f9c-d201-1498" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e7c8-fff5-e53f-932e" name="Sponson Mounted Heavy Bolters" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2dbb-e16f-7c1d-95b8" name="Quad Launcher" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b18f-a972-77c7-09db" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="6087-d5e6-1b88-fcfa" name="Quad Launcher (Shatter)" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">16&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Demolisher, Light AT</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="b8cc-0195-ba2c-b7f1" name="Quad Launcher (Thunderfire)" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">6&quot;-30&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Barrage, Light</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="40.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c609-5d80-b896-b444" name="Legion Deredeo Dreadnought Detachment" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="10db-6d56-17db-db75" name="Deredeo Dreadnought" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+            <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+2</characteristic>
+            <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">3+</characteristic>
+            <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+            <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">1</characteristic>
+            <characteristic name="Size" typeId="2321-029e-4f6e-e95b">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="d880-ba9c-4f42-8443" name="Aiolos Missile Launcher" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">25&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-2</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Anti-tank, Skyfire</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="fbbe-d9d4-9169-fc44" name="Sarcophagus Mounted Weapons" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">6+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Light, Point Defence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="4e19-7f8f-341a-be1e" name="Invulnerable Save (X)" hidden="false" targetId="a004-e385-1d47-6fe2" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Invulnerable Save (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6c5a-1f31-81b4-b42f" name="Tracking Array" hidden="false" targetId="ffeb-08d5-93c7-754a" type="profile"/>
+        <infoLink id="ae6a-6971-5eab-60ed" name="Armoured" hidden="false" targetId="b400-2039-aebd-9775" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="7eed-1f57-c112-80f4" name="New CategoryLink" hidden="false" targetId="ab6a-6694-93ab-32ac" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c9ff-de0b-32c0-e7b1" name="Ranged Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c7e2-eb8f-4fd2-10f1" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7a3a-6961-b549-6b80" name="Anvilus Autocannon Battery" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c802-01d8-073d-d7ae" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="05ac-9d5b-81d1-437c" name="Anvilus Autocannon Battery" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">16&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Accurate, Light AT</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="204c-ff05-071d-3fd8" name="Hellfire Plasma Cannonade" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7f2-7c37-d108-0e0f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="cf10-6957-f5fa-ce4b" name="Hellfire Plasma Cannonade" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">14&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-2</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Light AT</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e021-3163-1413-0500" name="Upgrades" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="9ab6-7694-baec-308a" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="40.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9bf1-811e-4e1b-35b5" name="Increase Detachment by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="80.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="85.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8494-1a5e-5584-4e88" name="Legion Tarantula Battery" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8b92-28d6-7dc3-e179" name="Legion Tarantula" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">-&quot;</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">2+</characteristic>
+            <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">-3</characteristic>
+            <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">-</characteristic>
+            <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+            <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">1</characteristic>
+            <characteristic name="Size" typeId="2321-029e-4f6e-e95b">4</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="77a8-f9f1-53fc-0e21" name="Automated Sentry" hidden="false" targetId="afc8-18c0-4b7a-a525" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="6ff1-6eac-5556-c88b" name="New CategoryLink" hidden="false" targetId="ab6a-6694-93ab-32ac" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="661f-ed85-a96b-3b52" name="Ranged Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89d4-f353-2a8e-8d59" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="df34-b0d8-228f-1891" name="Tarantula Lascannon Battery" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="337b-4f3c-6ddc-a38e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="fc40-3220-5791-01e1" name="Tarantula Lascannon Battery" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">22&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Anti-tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e259-66eb-6beb-bfdc" name="Hyperion Air-Defence Missiles" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd5b-21f9-da49-7339" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="371f-722f-2e26-b5a8" name="Hyperion Air-Defence Missiles" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">25&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Skyfire, Tracking</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="da0a-1630-7dee-483c" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c4b-4953-d402-c228" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1248-30b0-bb15-1ece" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="10e5-24f7-20f9-0388" name="Increase Detachment by 4" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="30.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="36.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ed8e-8eeb-60a2-03b4" name="Legion Predator Squadron" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="01eb-47c8-14cf-0dfd" name="Legion Predator" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">9&quot;</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">3+</characteristic>
+            <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+2</characteristic>
+            <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">3+</characteristic>
+            <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+            <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">2</characteristic>
+            <characteristic name="Size" typeId="2321-029e-4f6e-e95b">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ee16-e9b2-8bc0-dc6d" name="Hull Mounted Heavy Bolter" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Light, Point Defence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink id="50d0-8c48-de09-a518" name="New CategoryLink" hidden="false" targetId="c637-f33f-4b30-3869" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cef4-de62-5327-ad57" name="Upgrades (Max 9)" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="802d-5014-200c-2011" name="Increase Detachment by 1" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="35.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="eb27-17f8-a5d9-1ba0" name="Increase Detachment by 3" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="95.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="76a4-4ecf-bef3-350b" name="Increase Detachment by 6" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="185.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8c3d-6f82-df8a-8668" name="Turret Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="ec39-bcd3-f05c-2974">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e6a-4371-8621-eb0a" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ec39-bcd3-f05c-2974" name="Predator Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e402-e831-44e3-c785" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="29ad-f3e4-6ce4-24c6" name="Predator Lascannon" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">22&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Accurate, Anti-tank</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8729-2607-fa7b-2fe8" name="Predator Cannon" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7470-6026-85b5-cb17" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="7a78-c0e2-7403-55a7" name="Predator Cannon" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">18&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Light AT</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="94af-b7b9-1a17-006a" name="Sponson Weapons" hidden="false" collective="false" import="true" targetId="499a-42a2-6d5b-46e4" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="115.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ec27-f9ba-4b5e-bf8d" name="Legion Rhino Detachment" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="1be2-4bc9-51bc-5203" name="Rhino" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">9&quot;</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+            <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">0</characteristic>
+            <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">3+</characteristic>
+            <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+            <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">2</characteristic>
+            <characteristic name="Size" typeId="2321-029e-4f6e-e95b">V</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="0def-de54-49f5-28dc" name="Transport (X)" hidden="false" targetId="38cf-9fbf-eabc-7d4a" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Transport (2)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="97d1-c878-8635-6648" name="New CategoryLink" hidden="false" targetId="d562-1a2c-6494-3520" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8bb6-5bda-1e67-0f3a" name="Pintle Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d0c-d8f7-fa28-141b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3348-ef5e-4d03-ef36" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6657-3f99-c904-bf42" name="Havoc Launcher" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b1c-af03-1205-789e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="e068-08c4-87a9-0a96" name="Havoc Launcher" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">15&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Light AT, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="2.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e9b9-1c0d-9f80-18f7" name="Multi-Melta" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbf2-7742-6b59-7751" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f803-862b-dc65-487f" name="Multi-Melta" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">6&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-3</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Anti-Tank, Arc (Front)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="4.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6d0c-d8f7-fa28-141b" name="Twin-Linked Bolter" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1021-1a56-1407-4778" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="eb7c-7463-e9f0-b621" name="Twin-Linked Bolter" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Assault, Light, Point Defence</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="10.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4824-f5de-6352-5c0a" name="Legion Storm Eagle Squadron" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b640-70db-4d74-b70b" name="Storm Eagle" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">25&quot;</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">3+</characteristic>
+            <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+0</characteristic>
+            <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">-</characteristic>
+            <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+            <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">2</characteristic>
+            <characteristic name="Size" typeId="2321-029e-4f6e-e95b">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="92be-4342-7f17-8083" name="Storm Eagle Heavy Bolter" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">3</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-0</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Light, Point Defence, Skyfire</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e510-f323-73db-9995" name="Vengeance Launcher" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">25&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Light AT</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="a1c4-8508-b34c-243d" name="Tempest Rockers" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">35&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">2+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-2</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front),Skyfire</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="ef42-d8e5-c9db-2139" name="Wing Mounted Lascannon" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">2&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Anti-tank, Arc (Front), Skyfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="a881-ef5b-ad57-b9ad" name="Jink (X)" hidden="false" targetId="e034-e5dd-6485-2fa7" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Jink (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="54b1-0a48-15e2-e34a" name="Flyer" hidden="false" targetId="0eb1-b57a-6c38-9f93" type="profile"/>
+        <infoLink id="338d-5c1d-c27a-4691" name="Hover" hidden="false" targetId="2084-c007-46e1-39c9" type="profile"/>
+        <infoLink id="724f-6f8a-9bd5-fb23" name="Assault Transport (X)" hidden="false" targetId="8dc8-f20f-b9f9-19ab" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Assault Transport (5)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d329-2394-86b8-9cd9" name="New CategoryLink" hidden="false" targetId="5138-91f9-9899-9102" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b0ff-e741-40e6-ee24" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61cf-31ac-9af9-59e3" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a449-e47c-9865-cfc3" name="Increase Detachment by 1" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="100.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6056-0dcd-ddc3-d030" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="190.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="100.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="35e7-9a9f-a820-eff5" name="Legion Fire Raptor Squadron" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="c8cb-eee8-786b-5571" name="Fire Raptor" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">25&quot;</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">3+</characteristic>
+            <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+0</characteristic>
+            <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">-</characteristic>
+            <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+            <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">2</characteristic>
+            <characteristic name="Size" typeId="2321-029e-4f6e-e95b">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4707-c681-2d29-4ebb" name="Avenger Bolt Cannon" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">16&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">5</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Light AT, Rapid Fire, Skyfire</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="c84f-2ac8-d3dc-117a" name="Tempest Rockers" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">35&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">2+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-2</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front),Skyfire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="dcc6-9d02-6a64-8e46" name="Jink (X)" hidden="false" targetId="e034-e5dd-6485-2fa7" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Jink (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d9cb-6c9b-7800-a4df" name="Flyer" hidden="false" targetId="0eb1-b57a-6c38-9f93" type="profile"/>
+        <infoLink id="cc35-d280-e7e5-5418" name="Hover" hidden="false" targetId="2084-c007-46e1-39c9" type="profile"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3e20-194b-b8b4-4a66" name="New CategoryLink" hidden="false" targetId="5138-91f9-9899-9102" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f3c0-9975-2b78-fa9d" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="173a-caf2-e640-27cb" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="102d-3aee-1997-4c0b" name="Increase Detachment by 1" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="100.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8fcd-30f8-2ac0-95c9" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="190.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="01d4-b90f-a192-7432" name="Weapons (only 1 each)" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="77c8-68a3-54f4-6cd8" name="Quad Heavy Bolter Batteries" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63da-1086-7cf4-d5cc" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="9477-8f1a-c0de-fe39" name="Quad Heavy Bolter Batteries" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">4</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Light, Point Defence, Skyfire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="dd58-095f-9442-79a3" name="Lascannon Batteries" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77c9-a838-2412-5b32" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="8264-6cba-3d52-fdb1" name="Lascannon Batteries" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">22&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Anti-tank, Skyfire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f2f3-aaf9-87c6-a3c1" name="Gravis Autocannon Batteries" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b8c-2f3a-edf7-38a5" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="3e1f-153b-034a-5662" name="Gravis Autocannon Batteries" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="bea7-7040-8485-6f0f">16&quot;</characteristic>
+                    <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">3</characteristic>
+                    <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+                    <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+                    <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Light AT, Skyfire</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="100.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8968-6260-c8c4-0004" name="Legion Thunderhawk Gunship" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e04a-cf57-90d8-450e" name="Thunderhawk Gunship" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+          <characteristics>
+            <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">25&quot;</characteristic>
+            <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">2+</characteristic>
+            <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+0</characteristic>
+            <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">-</characteristic>
+            <characteristic name="W" typeId="5fb2-b6ab-559a-924c">2</characteristic>
+            <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">2</characteristic>
+            <characteristic name="Size" typeId="2321-029e-4f6e-e95b">1</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="7dbe-2738-28a0-61d5" name="Turbo-laser Destructor" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">40&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-3</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Accurate, Arc (Front)</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="572b-e1fb-f795-9887" name="Thunderhawk Lascannon" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">22&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Anti-tank, Arc (Front), Skyfire</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="422f-fe92-f597-63af" name="Thunderhawk Heavy Bolters" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">3</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Light, Point Defence, Skyfire</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="b4e2-cfd6-ea2b-9d73" name="Hellstrike Missiles" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">30&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Armourbane</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="f53c-ab7c-0f75-362e" name="Jink (X)" hidden="false" targetId="e034-e5dd-6485-2fa7" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Jink (5+)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="37f5-8f6b-c930-b43a" name="Flyer" hidden="false" targetId="0eb1-b57a-6c38-9f93" type="profile"/>
+        <infoLink id="cda7-6e1c-c750-8e49" name="Hover" hidden="false" targetId="2084-c007-46e1-39c9" type="profile"/>
+        <infoLink id="43b8-44f8-189e-858e" name="Large Assault Transport" hidden="false" targetId="bb4f-9cc1-ee7a-93be" type="profile">
+          <modifiers>
+            <modifier type="set" field="name" value="Large Assault Transport (8)"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="1cab-2696-e50f-fe30" name="New CategoryLink" hidden="false" targetId="5138-91f9-9899-9102" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="fc3d-601e-16b4-becb" name="Upgrades" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e8f-1b71-8c40-cbab" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="398a-c125-46db-5411" name="Increase Detachment by 1" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="100.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2c1f-b458-aef3-f77a" name="Increase Detachment by 2" hidden="false" collective="false" import="true" type="upgrade">
+              <costs>
+                <cost name=" Points" typeId="1466-da3f-0d27-dace" value="190.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="150.0"/>
+      </costs>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedSelectionEntries>
+    <selectionEntry id="5fdc-ea48-b61f-c0e7" name="Legion combi-bolters" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="17e3-b3ba-3e45-a796" name="Legion combi-bolters" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Accurate, Assault, Light</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="966b-25b7-112f-6d25" name="Legion bolters" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="af20-2c82-2f41-4c38" name="Legion bolters" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">8&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Assault, Light</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e4c1-8e38-b6a6-50e6" name="Legion bolt pistols" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="ef88-eda4-f676-5043" name="Legion bolt pistols" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">6&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Light</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="683c-9c9d-35d0-68ca" name="Plasma guns" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7827-3ff0-5c17-8006" name="Plasma guns" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">10&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Light AT</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5144-1767-614e-c077" name="Missile Launchers" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="b6fe-2613-830c-bc1a" name="Missile Launchers (Krak)" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">20&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Anti-tank</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="4a29-fd83-c577-1a7a" name="Missile Launchers (Frag)" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">20&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Ignores Cover, Light</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ac1c-9b4a-3e58-4809" name="Cyclonic Melta Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f8ab-d6a3-a870-001f" name="Cyclonic Melta Lance" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">6&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-3</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Anti-Tank, Demolisher</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="de63-60fe-89f3-cb13" name="Leviathan Storm Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="05b8-3237-df24-0cd0" name="Leviathan Storm Cannon" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">10&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Light AT, Rapid Fire</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7846-5396-bca2-91ae" name="Sponson Mounted Heavy Bolters" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="e072-29df-fa7c-91f6" name="Sponson Mounted Heavy Bolters" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">2</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">5+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Arc (Front), Light, Point Defence</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e2a4-e864-6650-0018" name="Sponson Mounted Lascannon" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="8857-64b4-4c3f-9ffd" name="Sponson Mounted Lascannon" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="bea7-7040-8485-6f0f">22&quot;</characteristic>
+            <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+            <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+            <characteristic name="AP" typeId="4b6c-996a-d317-affb">-1</characteristic>
+            <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Anti-tank, Arc (Front)</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <costs>
+        <cost name=" Points" typeId="1466-da3f-0d27-dace" value="0.0"/>
+      </costs>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="499a-42a2-6d5b-46e4" name="Sponson Weapons" hidden="false" collective="false" import="true" defaultSelectionEntryId="2bb3-e3a7-05f9-501b">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="351a-c210-1f00-f817" type="min"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="2bb3-e3a7-05f9-501b" name="Sponson Mounted Heavy Bolters" hidden="false" collective="false" import="true" targetId="7846-5396-bca2-91ae" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6175-a78c-20f7-3f79" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3c82-5571-8d25-6513" name="Sponson Mounted Lascannon" hidden="false" collective="false" import="true" targetId="e2a4-e864-6650-0018" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd26-e6ca-b606-0ead" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedProfiles>
+    <profile id="ab42-d877-a779-138e" name="Legion Terminators" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+      <characteristics>
+        <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+        <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+        <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+4</characteristic>
+        <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">3+</characteristic>
+        <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+        <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">1</characteristic>
+        <characteristic name="Size" typeId="2321-029e-4f6e-e95b">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d3a3-0b88-905a-4aa3" name="Assault Marines" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+      <characteristics>
+        <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">7&quot;</characteristic>
+        <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+        <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+3</characteristic>
+        <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">3+</characteristic>
+        <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+        <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">1</characteristic>
+        <characteristic name="Size" typeId="2321-029e-4f6e-e95b">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4b78-6241-6dcf-ab8f" name="Tactical Legionaries" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+      <characteristics>
+        <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+        <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">5+</characteristic>
+        <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+2</characteristic>
+        <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">3+</characteristic>
+        <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+        <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">1</characteristic>
+        <characteristic name="Size" typeId="2321-029e-4f6e-e95b">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6623-7d41-982b-8cc1" name="Leviathan Dreadnought" hidden="false" typeId="1de6-1e37-8d99-d93d" typeName="Unit">
+      <characteristics>
+        <characteristic name="Movement" typeId="606d-344a-bc3d-9dce">5&quot;</characteristic>
+        <characteristic name="Sv" typeId="a56f-38ae-3917-aadc">4+</characteristic>
+        <characteristic name="CAF" typeId="9c67-6b2a-c85e-8624">+5</characteristic>
+        <characteristic name="Morale" typeId="2954-f2fd-0d27-4222">3+</characteristic>
+        <characteristic name="W" typeId="5fb2-b6ab-559a-924c">1</characteristic>
+        <characteristic name="Scale" typeId="9612-b38d-f5aa-aafe">1</characteristic>
+        <characteristic name="Size" typeId="2321-029e-4f6e-e95b">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="56a0-0f73-b48f-5c40" name="Leviathan Siege Claw" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">-</characteristic>
+        <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">-</characteristic>
+        <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">-</characteristic>
+        <characteristic name="AP" typeId="4b6c-996a-d317-affb">-4</characteristic>
+        <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Rend, Wrecker (2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ddd3-6a79-5c0b-39db" name="Twin-linked Volkite Caliver" hidden="false" typeId="b734-31b7-0ff4-ad5f" typeName="Weapons">
+      <characteristics>
+        <characteristic name="Range" typeId="bea7-7040-8485-6f0f">12&quot;</characteristic>
+        <characteristic name="Dice" typeId="2883-af07-d4e8-d8d0">1</characteristic>
+        <characteristic name="To Hit" typeId="74b1-f85d-ede5-c758">4+</characteristic>
+        <characteristic name="AP" typeId="4b6c-996a-d317-affb">0</characteristic>
+        <characteristic name="Traits" typeId="61ff-d2ec-f13b-06fa">Accurate, Deflagrate, Light</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
