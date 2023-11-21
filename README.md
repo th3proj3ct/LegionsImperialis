@@ -15,6 +15,9 @@ On PC you go Manage Data (three rectangles) -> Import Data -> Import Data from U
 
 On Mobile go Manage Data (three rectangles) -> 3 dots -> Add data index url -> use our data URL.
 
+Afterwards go BACK to Manage Data and hit Update Data, ensuring to check "Delete existing data first?".  This will NOT delete any saved rosters or anything in other game systems
+
+
 __I found a bug!__ / *I have another request*
 
 Great, thank you!
