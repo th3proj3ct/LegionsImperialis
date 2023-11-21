@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f55f-904b-358d-63ee" name="Legiones Astartes" revision="1" battleScribeVersion="2.03" authorName="Th3Proj3ct" authorUrl="https://github.com/th3proj3ct/LegionsImperialis/" library="false" gameSystemId="f02f-b67d-2b22-bc98" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f55f-904b-358d-63ee" name="Legiones Astartes" revision="2" battleScribeVersion="2.03" authorName="Th3Proj3ct" authorUrl="https://github.com/th3proj3ct/LegionsImperialis/" library="false" gameSystemId="f02f-b67d-2b22-bc98" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <forceEntries>
     <forceEntry id="a6ce-1021-3661-4994" name="Legion Demi-Company" hidden="false">
+      <rules>
+        <rule id="5ce4-a00a-9963-8d92" name="Heart of the Legion" hidden="false">
+          <description>Compulsory Core Detachment slots in a Legion Demi-Company must be filled with Legion Tactical Detachments. All non-infantry models within this Formation increase their Tactical Strength by 1 when contesting an Objective marker that an Infantry model within this Formation is also contesting.</description>
+        </rule>
+        <rule id="bd74-e7a0-f297-65f2" name="Dedicated Transports" hidden="false">
+          <description>Any Legiones Astartes Detachment within the Legion Demi-Company Formation that contains only Infantry models may be upgraded with the Legion Rhinos as a Dedicated Transports.</description>
+        </rule>
+      </rules>
       <categoryLinks>
         <categoryLink id="8083-afb7-5143-b368" name="HQ" hidden="false" targetId="a4ea-0cfb-537b-ca12" primary="false">
           <constraints>
@@ -164,6 +172,86 @@
         <categoryLink id="be3c-9f43-9ec6-77e3" name="Light Armour" hidden="false" targetId="cbf0-9ac8-268c-bddf" primary="false">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c1f-2144-a560-f319" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="4fc1-6470-5036-fec0" name="Legion Armoured Company" hidden="false">
+      <categoryLinks>
+        <categoryLink id="6591-8512-a18c-9240" name="Battle Tank" hidden="false" targetId="c637-f33f-4b30-3869" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f1d-c761-319a-0c68" type="min"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4427-76b8-a3c5-12fe" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="244c-fd11-18ce-1a0e" name="Heavy Armour" hidden="false" targetId="3fed-47bc-8b39-4c04" primary="false">
+          <modifiers>
+            <modifier type="set" field="8a59-a929-c43b-06bf" value="2.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5138-91f9-9899-9102" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fc2-0cfb-e463-ec79" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a59-a929-c43b-06bf" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f5f5-d358-b695-60c3" name="Light Armour" hidden="false" targetId="cbf0-9ac8-268c-bddf" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="040d-d048-6592-7441" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8cbf-b3a4-2eb8-63da" name="Air Support" hidden="false" targetId="5138-91f9-9899-9102" primary="false">
+          <modifiers>
+            <modifier type="set" field="3d40-d38f-3dff-260f" value="0.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3fed-47bc-8b39-4c04" type="greaterThan"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d40-d38f-3dff-260f" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="7890-b8c1-66b3-a907" name="Legion Aerial Assault" hidden="false">
+      <rules>
+        <rule id="818c-b6ec-f7d3-76bb" name="Dedicated Transports" hidden="false">
+          <description>Any Legiones Astartes Detachment within a Legion Aerial Assault Formation can be upgraded with a Legion Storm Eagles or Legion Thunderhawks as a Dedicated Transports, at a cost of +100 points per Storm Eagle and +150 points per Legion Thunderhawk.</description>
+        </rule>
+        <rule id="5e64-c912-b82d-390f" name="Aerial Assault" hidden="false">
+          <description>All Detachments within the Legion Aerial Assault Formation that do not have the Flyer special rule must begin the game Embarked upon a Transport with the Flyer special rule.</description>
+        </rule>
+      </rules>
+      <categoryLinks>
+        <categoryLink id="7cfc-84df-f5ff-7cf0" name="Support" hidden="false" targetId="ee0b-e2bd-604f-e194" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bade-9de8-e878-93e8" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f82f-6042-24d4-c116" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4fca-c0ef-aa96-8c9c" name="Core" hidden="false" targetId="7370-2f29-7f62-e413" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="194f-aa5d-7309-08e9" type="min"/>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fee-39a6-bcbd-d7ba" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7d8c-d8f7-a74d-5804" name="Air Support" hidden="false" targetId="5138-91f9-9899-9102" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f227-4791-81d6-31b7" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8cb9-5e50-628f-90c2" name="Vanguard" hidden="false" targetId="505e-8834-bcf2-e96d" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c920-ca86-7817-c8d8" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="83ce-0eef-9315-9b21" name="HQ" hidden="false" targetId="a4ea-0cfb-537b-ca12" primary="false">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b780-e470-e8d7-e27c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3437-b7fd-32cb-f148" type="min"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -580,7 +668,7 @@
         <categoryLink id="947d-0eea-4838-0b96" name="New CategoryLink" hidden="false" targetId="7370-2f29-7f62-e413" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c0ec-507a-adba-0603" name="Upgrades" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="c0ec-507a-adba-0603" name="Upgrades (2 additional bases each)" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d257-5b6e-8e94-c858" type="max"/>
           </constraints>
@@ -1465,10 +1553,30 @@
       <categoryLinks>
         <categoryLink id="97d1-c878-8635-6648" name="New CategoryLink" hidden="false" targetId="d562-1a2c-6494-3520" primary="true"/>
       </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3a1e-5f27-e5e1-46a6" name="Additional Rhinos" hidden="false" collective="false" import="true" type="upgrade">
+          <costs>
+            <cost name=" Points" typeId="1466-da3f-0d27-dace" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="8bb6-5bda-1e67-0f3a" name="Pintle Weapon" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d0c-d8f7-fa28-141b">
+          <modifiers>
+            <modifier type="increment" field="7525-133e-a233-f8ed" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3a1e-5f27-e5e1-46a6" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="3348-ef5e-4d03-ef36" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3a1e-5f27-e5e1-46a6" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3348-ef5e-4d03-ef36" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7525-133e-a233-f8ed" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="6657-3f99-c904-bf42" name="Havoc Launcher" hidden="false" collective="false" import="true" type="upgrade">
