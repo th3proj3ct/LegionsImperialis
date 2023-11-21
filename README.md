@@ -1,11 +1,6 @@
 # Legions Imperialis
 Battlescribe repository for the new Legions Imperialis game
 ===========================
-#### Contents ####
-
-* [Overview][]
-* [Links][]
-
 ## Overview ##
 [Overview]: #overview
 
