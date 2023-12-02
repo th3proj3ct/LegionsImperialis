@@ -1,5 +1,5 @@
-# Legions Imperialis
-Battlescribe repository for the new Legions Imperialis game
+# [obsolete] Legions Imperialis
+[obsolete] Battlescribe repository for the new Legions Imperialis game
 ===========================
 ## Overview ##
 [Overview]: #overview
