@@ -6,6 +6,14 @@ Battlescribe repository for the new Legions Imperialis game
 
 __What's this?__
 
+THIS HAS BEEN REPLACED BY THE OFFICIAL BSDATA REPOSITORY!:
+https://github.com/BSData/Horus-Heresy-Legions-Imperialis/
+
+
+
+
+
+Old info:
 This repository is created to give people the ability to make forces for Legions Imperialis in Battlescribe. It's a GitHub repository of datafiles. 
 
 Data Url:
